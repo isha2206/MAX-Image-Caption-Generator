@@ -32,4 +32,6 @@ RUN sha512sum -c sha512sums.txt
 
 EXPOSE 5000
 
-CMD python app.py
+# CMD python app.py
+
+ENTRYPOINT ["./start_servers.sh"]
